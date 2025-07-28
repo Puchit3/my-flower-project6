@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข่าวรอบโลก - อัปเดตเรียลไทม์</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">ข่าวรอบโลก</div>
+        <nav class="nav-menu">
+            <a href="#">หน้าหลัก</a>
+            <a href="#">ข่าวล่าสุด</a>
+            <a href="#">หมวดหมู่</a>
+            <a href="#">เกี่ยวกับเรา</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="ค้นหาข่าว...">
+            <span class="search-icon">&#128269;</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            <section class="news-section">
+                <h2>ข่าวล่าสุด</h2>
+                <div id="news-feed" class="news-feed">
+                    <div class="news-card">
+                        <h3>ผู้นำโลกหารือมาตรการรับมือวิกฤตพลังงาน</h3>
+                        <div class="meta">
+                            <span class="timestamp">25 ก.ค. 2568, 10:30 น.</span>
+                            <span class="source">สำนักข่าว Global News</span>
+                        </div>
+                        <p>บรรดาผู้นำจากประเทศหลักได้รวมตัวกันในการประชุมฉุกเฉินเพื่อหารือแนวทางแก้ไขวิกฤตพลังงานทั่วโลกที่กำลังทวีความรุนแรงขึ้นอย่างต่อเนื่อง...</p>
+                    </div>
+
+                    <div class="news-card">
+                        <h3>เทคโนโลยี AI ใหม่พลิกโฉมอุตสาหกรรมการผลิต</h3>
+                        <div class="meta">
+                            <span class="timestamp">25 ก.ค. 2568, 09:45 น.</span>
+                            <span class="source">Tech Today</span>
+                        </div>
+                        <p>บริษัท Innovate Corp. เปิดตัวแพลตฟอร์ม AI ขั้นสูงที่คาดว่าจะปฏิวัติกระบวนการผลิต ลดต้นทุน และเพิ่มประสิทธิภาพการผลิตในภาคอุตสาหกรรม...</p>
+                    </div>
+
+                    <div class="news-card">
+                        <h3>สภาพอากาศสุดขั้วส่งผลกระทบต่อผลผลิตทางการเกษตร</h3>
+                        <div class="meta">
+                            <span class="timestamp">25 ก.ค. 2568, 08:15 น.</span>
+                            <span class="source">รายงานข่าวสิ่งแวดล้อม</span>
+                        </div>
+                        <p>นักวิทยาศาสตร์ด้านสภาพอากาศเตือนถึงผลกระทบระยะยาวจากสภาพอากาศที่แปรปรวน ซึ่งอาจทำให้ผลผลิตทางการเกษตรลดลงอย่างมากทั่วโลก...</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <h3>ข่าวยอดนิยม</h3>
+            <ul class="trending-list">
+                <li><a href="#">นักวิทยาศาสตร์ค้นพบสิ่งมีชีวิตสายพันธุ์ใหม่ในมหาสมุทร</a></li>
+                <li><a href="#">ตลาดหุ้นเอเชียปิดบวกต่อเนื่องเป็นวันที่สาม</a></li>
+                <li><a href="#">นวัตกรรมยานยนต์ไฟฟ้ากับการเดินทางแห่งอนาคต</a></li>
+                <li><a href="#">วัฒนธรรมอาหารริมทางของไทยได้รับการยกย่องระดับโลก</a></li>
+                <li><a href="#">แนวโน้มการท่องเที่ยวเชิงสุขภาพหลังยุคโควิด-19</a></li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">หมวดหมู่</h3>
+            <ul class="trending-list">
+                <li><a href="#">การเมือง</a></li>
+                <li><a href="#">เศรษฐกิจ</a></li>
+                <li><a href="#">เทคโนโลยี</a></li>
+                <li><a href="#">สิ่งแวดล้อม</a></li>
+                <li><a href="#">ต่างประเทศ</a></li>
+                <li><a href="#">สังคม</a></li>
+                <li><a href="#">บันเทิง</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 ข่าวรอบโลก. สงวนลิขสิทธิ์</p>
+        <nav>
+            <a href="#">นโยบายความเป็นส่วนตัว</a> |
+            <a href="#">ข้อกำหนดและเงื่อนไข</a> |
+            <a href="#">ติดต่อเรา</a>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
